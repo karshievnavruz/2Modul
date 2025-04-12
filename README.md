@@ -69,5 +69,3 @@ Agar muammo yuzaga kelsa, quyidagilarni tekshiring:
 
 Loyiha muvaffaqiyatli ishga tushdi! Endi brauzeringizda http://localhost:8000 manzilini oching.
 ```
-
-Bu README.md fayliga loyihani ishga tushirish uchun zarur bo'lgan barcha komandalar kiritilgan. Uni loyiha ildiz katalogiga joylashtiring.

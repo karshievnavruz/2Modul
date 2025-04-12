@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}</title>
+    <link rel="stylesheet" href="{% static 'shop/styles.css' %}">
+    <script src="{% static 'shop/script.js' %}"></script>
+</head>
+<body>
+    <div class="product-container">
+        <h1 class="product-title">{{ product.name }}</h1>
+        
+        <div class="product-specs">
+            <div class="spec-item"><strong>Yil:</strong> {{ product.year }}</div>
+            <div class="spec-item"><strong>Xotira:</strong> {{ product.memory }}GB</div>
+            <div class="spec-item"><strong>Holati:</strong> {{ product.condition }}</div>
+        </div>
+        
+        <p class="product-description">{{ product.description|linebreaks }}</p>
+        <p class="product-price">Narxi: ${{ product.price }}</p>
+        
+        <a href="{% url 'product_list' %}" class="back-button">Orqaga qaytish</a>
+    </div>
+</body>
+</html>
